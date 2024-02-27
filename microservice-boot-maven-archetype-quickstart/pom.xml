@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <artifactId>microservice-boot-parent</artifactId>
+        <groupId>cn.alpha2j</groupId>
+        <version>${revision}</version>
+        <relativePath>../microservice-boot-project/microservice-boot-parent/pom.xml</relativePath>
+    </parent>
+
+    <artifactId>mb_archetype_quickstart</artifactId>
+    <packaging>pom</packaging>
+
+    <description>microservice boot maven archetype quickstart</description>
+
+    <modules>
+        <module>api</module>
+        <module>core</module>
+        <module>dal</module>
+        <module>domain</module>
+        <module>provider</module>
+        <module>rpc</module>
+  </modules>
+
+    <dependencyManagement>
+        <dependencies>
+            <dependency>
+                <groupId>cn.alpha2j</groupId>
+                <artifactId>mb_archetype_quickstart-core</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.alpha2j</groupId>
+                <artifactId>mb_archetype_quickstart-dal</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.alpha2j</groupId>
+                <artifactId>mb_archetype_quickstart-domain</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>cn.alpha2j</groupId>
+                <artifactId>mb_archetype_quickstart-provider</artifactId>
+                <version>${project.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-test</artifactId>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+</project>

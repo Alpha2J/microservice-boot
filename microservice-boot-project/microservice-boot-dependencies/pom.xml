@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>microservice-boot-project</artifactId>
+        <groupId>cn.alpha2j</groupId>
+        <version>${revision}</version>
+    </parent>
+    <modelVersion>4.0.0</modelVersion>
+
+    <artifactId>microservice-boot-dependencies</artifactId>
+    <packaging>pom</packaging>
+
+    <properties>
+        <jedis.client.version>4.2.0</jedis.client.version>
+        <log4j2.version>2.17.2</log4j2.version>
+        <kryo.version>5.3.0</kryo.version>
+        <spring.boot.starters.version>2.7.14</spring.boot.starters.version>
+        <sofa.boot.starters.version>3.22.0</sofa.boot.starters.version>
+    </properties>
+
+    <dependencyManagement>
+        <dependencies>
+            <!--  microservice-boot -->
+            <!--  cores -->
+            <dependency>
+                <groupId>cn.alpha2j</groupId>
+                <artifactId>microservice-boot-core</artifactId>
+                <version>${revision}</version>
+            </dependency>
+
+
+
+
+            <!--  starters -->
+            <dependency>
+                <groupId>cn.alpha2j</groupId>
+                <artifactId>redis-microservice-boot-starter</artifactId>
+                <version>${revision}</version>
+            </dependency>
+
+
+
+
+
+            <!--  third-parts -->
+            <dependency>
+                <groupId>redis.clients</groupId>
+                <artifactId>jedis</artifactId>
+                <version>${jedis.client.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-api</artifactId>
+                <version>${log4j2.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.logging.log4j</groupId>
+                <artifactId>log4j-core</artifactId>
+                <version>${log4j2.version}</version>
+            </dependency>
+            <dependency>
+                <!--                <groupId>com.esotericsoftware.kryo</groupId>-->
+                <!--                <artifactId>kryo5</artifactId>-->
+                <groupId>com.esotericsoftware</groupId>
+                <artifactId>kryo</artifactId>
+                <version>${kryo.version}</version>
+            </dependency>
+        </dependencies>
+    </dependencyManagement>
+</project>
