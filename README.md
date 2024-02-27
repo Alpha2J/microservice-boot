@@ -1,2 +1,1 @@
-1. jdk8
-2. 
+An archetype for your microservice startup.
