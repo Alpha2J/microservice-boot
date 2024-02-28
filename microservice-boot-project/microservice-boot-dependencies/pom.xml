@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0"
-         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+<project xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xmlns="http://maven.apache.org/POM/4.0.0"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <parent>
         <artifactId>microservice-boot-project</artifactId>
@@ -16,8 +16,12 @@
         <jedis.client.version>4.2.0</jedis.client.version>
         <log4j2.version>2.17.2</log4j2.version>
         <kryo.version>5.3.0</kryo.version>
-        <spring.boot.starters.version>2.7.14</spring.boot.starters.version>
-        <sofa.boot.starters.version>3.22.0</sofa.boot.starters.version>
+        <commons.codec.version>1.15</commons.codec.version>
+        <commons.lang3.version>3.12.0</commons.lang3.version>
+        <commons.collections4.version>4.4</commons.collections4.version>
+
+        <mockito.core.version>5.1.0</mockito.core.version>
+        <assertj.core.version>3.24.2</assertj.core.version>
     </properties>
 
     <dependencyManagement>
@@ -31,17 +35,12 @@
             </dependency>
 
 
-
-
             <!--  starters -->
             <dependency>
                 <groupId>cn.alpha2j</groupId>
                 <artifactId>redis-microservice-boot-starter</artifactId>
                 <version>${revision}</version>
             </dependency>
-
-
-
 
 
             <!--  third-parts -->
@@ -66,6 +65,37 @@
                 <groupId>com.esotericsoftware</groupId>
                 <artifactId>kryo</artifactId>
                 <version>${kryo.version}</version>
+            </dependency>
+
+            <dependency>
+                <groupId>commons-codec</groupId>
+                <artifactId>commons-codec</artifactId>
+                <version>${commons.codec.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-lang3</artifactId>
+                <version>${commons.lang3.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-collections4</artifactId>
+                <version>${commons.collections4.version}</version>
+            </dependency>
+
+            <!-- tests -->
+            <dependency>
+                <groupId>org.mockito</groupId>
+                <artifactId>mockito-core</artifactId>
+                <version>${mockito.core.version}</version>
+                <scope>test</scope>
+            </dependency>
+
+            <dependency>
+                <groupId>org.assertj</groupId>
+                <artifactId>assertj-core</artifactId>
+                <version>${assertj.core.version}</version>
+                <scope>test</scope>
             </dependency>
         </dependencies>
     </dependencyManagement>

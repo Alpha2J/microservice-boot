@@ -15,4 +15,8 @@ CREATE TABLE `user`
     UNIQUE KEY `uniq_open_id` (`open_id`)
 ) COMMENT '用户表';
 
-INSERT INTO `user` VALUES (1,'https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIsibK6mViaF9pPa1IC5nkQQYwZicGHNSAe5PMO81O13SXXYKKfyBic0anI2mP7FIJMapJRSdHa7tFBkg/132',1,'Alpha','United States,Florida,Orlando','o8vl75Wpap9aUJUACihpSrR6Dzo8','2021-01-23 11:02:46','2021-01-23 11:05:42');
+INSERT INTO `user`
+VALUES (1,
+        'https://thirdwx.qlogo.cn/mmopen/vi_32/Q0j4TwGTfTIsibK6mViaF9pPa1IC5nkQQYwZicGHNSAe5PMO81O13SXXYKKfyBic0anI2mP7FIJMapJRSdHa7tFBkg/132',
+        1, 'Alpha', 'United States,Florida,Orlando', 'o8vl75Wpap9aUJUACihpSrR6Dzo8', '2021-01-23 11:02:46',
+        '2021-01-23 11:05:42');

@@ -1,11 +1,14 @@
 # Read Me First
+
 The following was discovered as part of building this project:
 
-* The original package name 'cn.hellooo.laughter-pill-backend' is invalid and this project uses 'cn.hellooo.laughterpillbackend' instead.
+* The original package name 'cn.hellooo.laughter-pill-backend' is invalid and this project uses '
+  cn.hellooo.laughterpillbackend' instead.
 
 # Getting Started
 
 ### Reference Documentation
+
 For further reference, please consider the following sections:
 
 * [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
@@ -17,6 +20,7 @@ For further reference, please consider the following sections:
 * [Spring Boot Actuator](https://docs.spring.io/spring-boot/docs/2.7.14/reference/htmlsinge/index.html#actuator)
 
 ### Guides
+
 The following guides illustrate how to use some features concretely:
 
 * [Building a RESTful Web Service](https://spring.io/guides/gs/rest-service/)
