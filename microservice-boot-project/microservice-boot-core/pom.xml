@@ -16,4 +16,32 @@
     <modules>
         <module>tools-microservice-boot</module>
     </modules>
+
+
+
+
+
+    <!-- todo: remove me after the response of The sonatype Central Team -->
+    <!-- metadata required for publishing to maven central repository -->
+    <name>microservice-boot</name>
+    <description>An archetype for your microservice startup</description>
+    <url>https://github.com/Alpha2J/microservice-boot</url>
+    <licenses>
+        <license>
+            <name>Apache License, Version 2.0</name>
+            <url>https://www.apache.org/licenses/LICENSE-2.0</url>
+        </license>
+    </licenses>
+    <scm>
+        <url>https://github.com/Alpha2J/microservice-boot</url>
+        <connection>https://github.com/Alpha2J/microservice-boot.git</connection>
+        <developerConnection>https://github.com/Alpha2J/microservice-boot.git</developerConnection>
+        <tag>HEAD</tag>
+    </scm>
+    <developers>
+        <developer>
+            <name>Jeb.Wang</name>
+            <email>jeb.wannng@gmail.com</email>
+        </developer>
+    </developers>
 </project>
