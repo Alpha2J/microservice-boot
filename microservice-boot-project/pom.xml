@@ -103,7 +103,6 @@
     </build>
 
     <!-- metadata required for publishing to maven central repository -->
-    <name>microservice-boot</name>
     <description>An archetype for your microservice startup</description>
     <url>https://github.com/Alpha2J/microservice-boot</url>
     <licenses>
