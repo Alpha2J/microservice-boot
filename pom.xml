@@ -16,7 +16,7 @@
     <packaging>pom</packaging>
 
     <modules>
-<!--        <module>microservice-boot-maven-archetype-quickstart</module>-->
+        <module>microservice-boot-maven-archetype-quickstart</module>
         <module>microservice-boot-project</module>
     </modules>
 

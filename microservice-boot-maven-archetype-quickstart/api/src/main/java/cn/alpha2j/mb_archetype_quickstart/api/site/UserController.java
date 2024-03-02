@@ -14,8 +14,8 @@ public class UserController {
     @Autowired
     private UserService userService;
 
-    @GetMapping("hello")
-    public String world(@RequestParam("userId") Long userId) {
+    @GetMapping("user")
+    public String user(@RequestParam("userId") Long userId) {
         UserVO userVO = userService.getById(userId);
         return userVO.getNickname();
     }

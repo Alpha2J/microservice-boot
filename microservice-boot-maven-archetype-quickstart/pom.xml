@@ -5,6 +5,7 @@
     <parent>
         <artifactId>microservice-boot-parent</artifactId>
         <groupId>cn.alpha2j</groupId>
+        <!-- todo: by archetype modify me -->
         <version>${revision}</version>
         <relativePath>../microservice-boot-project/microservice-boot-parent/pom.xml</relativePath>
     </parent>
